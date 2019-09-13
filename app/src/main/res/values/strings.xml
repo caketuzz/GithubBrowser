@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ghbrowser</string>
+    <string name="title_activity_repo_detail">RepoDetailActivity</string>
+    <string name="tab_frag_1">Description</string>
+    <string name="tab_frag_2">Contributors</string>
+    <string name="tab_frag_3">Branches</string>
+    <string name="str_no_repo_found">No repo found</string>
+    <string name="str_default_repo_name">Repository</string>
+    <string name="str_no_data">-</string>
+    <string name="str_repo_full_name">Repo Full Name</string>
+</resources>

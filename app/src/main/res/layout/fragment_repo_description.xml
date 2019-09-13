@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        android:text="@string/str_default_repo_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/iv_is_fork"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_nb_fork"
+        android:layout_width="@dimen/icon_square_small"
+        android:layout_height="@dimen/icon_square_small"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:src="@mipmap/code_fork"
+        app:layout_constraintEnd_toStartOf="@+id/tv_nb_forks"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/code_fork" />
+
+    <TextView
+        android:id="@+id/tv_stargazers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:text="@string/str_no_data"
+        app:layout_constraintEnd_toStartOf="@+id/iv_nb_fork"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="@dimen/icon_square_small"
+        android:layout_height="@dimen/icon_square_small"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        app:layout_constraintEnd_toStartOf="@+id/tv_stargazers"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:gravity="start|top"
+        android:text="@string/str_no_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repo_name" />
+
+    <TextView
+        android:id="@+id/tv_nb_forks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:text="@string/str_no_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_is_fork"
+        android:layout_width="@dimen/icon_square_small"
+        android:layout_height="@dimen/icon_square_small"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/code_fork" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

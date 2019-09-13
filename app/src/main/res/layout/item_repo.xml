@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/material_margin">
+
+
+    <ImageView
+        android:id="@+id/iv_repo_avatar"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginBottom="@dimen/material_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:src="@android:drawable/btn_star_big_on"/>
+
+    <TextView
+        android:id="@+id/tv_repo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        android:text="@string/str_default_repo_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/iv_repo_avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_repo_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_margin"
+        android:layout_marginLeft="@dimen/material_margin"
+        android:layout_marginTop="@dimen/material_margin"
+        android:text="@string/str_repo_full_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@+id/iv_repo_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repo_name" />
+
+    <TextView
+        android:id="@+id/tv_repo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/material_margin"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:layout_marginBottom="@dimen/material_margin"
+        android:text="#0456"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_nb_fork"
+        android:layout_width="@dimen/icon_square_small"
+        android:layout_height="@dimen/icon_square_small"
+        android:layout_marginEnd="@dimen/material_margin"
+        android:layout_marginRight="@dimen/material_margin"
+        android:src="@mipmap/code_fork"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_repo_id"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
